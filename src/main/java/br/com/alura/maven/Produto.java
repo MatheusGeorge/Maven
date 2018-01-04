@@ -4,7 +4,6 @@ public class Produto {
 	
 	private final String nome;
 	private final double preco;
-	private final String categoria = "comida";
 	
 	
 	public Produto(String nome, double preco) {
@@ -21,6 +20,11 @@ public class Produto {
 
 	public Double getPreco() {
 		return preco;
+	}
+
+
+	public Double getPrecoComImposto() {
+		return preco * 1.10;
 	}
 	
 }
